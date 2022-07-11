@@ -4,6 +4,7 @@ from view import my_view
 app = Flask(__name__)
 app.register_blueprint(my_view)
 
+#error handling for webpage routing
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html")

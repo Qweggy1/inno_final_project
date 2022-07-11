@@ -78,3 +78,27 @@ ol{
     
 }
 
+.desktop, .mobile {
+    display: none;
+}
+
+@media (max-width: 500px) { 
+    
+}
+
+@media (orientation: landscape) {
+    .desktop {
+        display: inline-block;
+    }
+}
+
+@media (orientation: portrait) {
+    .mobile {
+        display: inline-block;
+        
+    }
+    body {
+        color:aquamarine;
+        background-color: black;
+    }
+}
