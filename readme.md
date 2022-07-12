@@ -8,5 +8,5 @@ https://github.com/Qweggy1/Innovate_june_portfolio/tree/main/backend_flask - Bac
 
 https://github.com/Qweggy1/Innovate_june_portfolio/tree/main/main_asign - First plan of main assignment website introduction to JavaScript
 
-
+https://trello.com/b/bHX6gA3j/bt-innovate - Public Kanban board
 
