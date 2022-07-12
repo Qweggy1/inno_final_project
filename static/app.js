@@ -32,7 +32,16 @@ function sendAlert() {
     alert(location.hostname);
 }
 
-function darkMode() {
+function lightMode() {
     let element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("light-mode");
+}
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
 }

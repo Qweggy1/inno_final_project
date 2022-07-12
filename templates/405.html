@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{{ e }}
-    <p>Ooopsie we missed a beat, please click above to go back home, or any of the links so we can get back on beat. </p>
-
-    <img src="static/404frog.jpg" alt="404 error being captured by a frog">
+<br>
+{{ error }}
+<p class="red"><a href ="{{ url_for('my_view.admin')}}">Click here</a> to take you back to the admin logon page or if you have forgot your details please contact the site owner.</p>
+    <br>
+    <img src="static/405frog.jpg" alt="405 error being captured by a frog">
+    <br>
 {% endblock %}

@@ -2,59 +2,75 @@
 
 body{
     background-color: black !important;
+    color: cornflowerblue !important;
     font-family: 'Arima', cursive;
     font-size: 10px;
 } 
 
-#navbar {
-    background-color:black; 
-    height: 40px;
-    display: flex;
-    justify-content: space-evenly;   
-    align-items: center;
-    
-    
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
 }
 
-#navbar a{
-    color: lightblue;
+  /* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+  /* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Arima', cursive;
-    font-style: oblique;
-    border: 3px cornflowerblue solid;
-    border-image: linear-gradient(to top, cornflowerblue, rgb(0, 0, 0)) 1;
-    
+    font-size: 17px;
+    display: block;
 }
 
-#navbar a:hover {
-    color:darkolivegreen
+  /* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+  /* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: grey;
+    color: black;
 }
 
 
+/* Aligning centre to all elements */
 *{
     text-align: center;
 
 }
-
+/* paragraph colours and marked important so java script does not over right. */
 p {
     color: lightblue !important;
     font-size: 20px;
     font-family: 'Arima', cursive;
 }
 
+/* List colours and heading colours.  */
 li {
     color: lightblue;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Arima', cursive;
 }
 h1,h2,h3,h4,h5,h6{
     color: rgb(60, 152, 182) !important;
     font-family: 'Arima', cursive;
 }
-
+/* image resizing as to large default */
 img{
-    width: 40%;
+    width: 20%;
 }
+
 
 .content{
     margin-left:auto;
@@ -74,31 +90,39 @@ ol{
 
 .album {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-direction: row;
+    -ms-flex-align: center;
 }
 
 .desktop, .mobile {
-    display: none;
+    display: none !important;
 }
 
-@media (max-width: 500px) { 
-    
+.desktop, .mobile {
+    display: none !important;
 }
+
+/* @media (max-width: 500px) { 
+    
+} */
 
 @media (orientation: landscape) {
     .desktop {
-        display: inline-block;
+        display: inline-block !important;
     }
 }
 
 @media (orientation: portrait) {
     .mobile {
-        display: inline-block;
+        display: inline-block !important;
         
     }
     body {
-        color:aquamarine;
-        background-color: black;
+        color:aquamarine !important;
+        background-color: black !important;
     }
+}
+
+.red{
+    color: red !important;
 }

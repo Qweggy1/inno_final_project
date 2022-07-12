@@ -42,7 +42,7 @@ def page_not_found(e):
     return render_template("404.html")
 
 # Route for handling the admin login page
-@my_view.route('/login', methods=['GET', 'POST'])
+@my_view.route('/admin', methods=['GET', 'POST'])
 def login():
     error = None
     if request.method == 'POST':
@@ -52,7 +52,6 @@ def login():
         else:
             return redirect(url_for('my_view.index'))
     return render_template('admin.html', error=error) 
-
 
 
 #Re-routing using java scripts.
