@@ -126,3 +126,19 @@ ol{
 .red{
     color: red !important;
 }
+
+.zoom {
+    padding: 10px;
+    transition: transform .5s;
+    /* margin: 0 auto; */
+  }
+  
+  .zoom:hover {
+    transform: scale(2.5);
+  }
+
+.size {
+    width: 20%;
+    height: 20%;
+    
+}

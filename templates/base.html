@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="{{url_for('static', filename='app.js')}}"></script>
+    
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body onload="darkCheck()">
 
     <!-- Top Navigation Menu -->
     <div class="topnav">
@@ -29,15 +30,18 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
+    <!-- Desktop - Mobile modes -->
     <span class="desktop">
-        <p>You are on desktop mode</p>
+        <p>Desktop mode</p>
     </span>
     <span class="mobile">
-        <p>You are on mobile mode</p>
+        <p>Mobile mode</p>
     </span>
     {% block content %}
+
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     {% endblock %}
 </body>
 </html>

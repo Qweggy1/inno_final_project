@@ -31,7 +31,7 @@ def aboutmusicproduction():
 def aboutdj():
     return render_template("aboutdj.html")
 
-#admin page route
+# admin page route
 @my_view.route('/admin')
 def admin():
     return render_template("admin.html")
@@ -54,9 +54,14 @@ def login():
     return render_template('admin.html', error=error) 
 
 
-#Re-routing using java scripts.
-@my_view.route('/javascript')
-@my_view.route('/js')
-@my_view.route('/home')
-def index_redirect():
-    return redirect(url_for("my_view.index"))
+@my_view.route('/musicproduction')
+def aboutmusicproduction_redirect():
+    return redirect(url_for("my_view.aboutmusicproduction"))
+
+@my_view.route('/music')
+def aboutmusic_redirect():
+    return redirect(url_for("my_view.aboutmusic"))
+
+@my_view.route('/qweggy')
+def aboutme_redirect():
+    return redirect(url_for("my_view.aboutme"))

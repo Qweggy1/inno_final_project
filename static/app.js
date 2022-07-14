@@ -32,10 +32,6 @@ function sendAlert() {
     alert(location.hostname);
 }
 
-function lightMode() {
-    let element = document.body;
-    element.classList.toggle("light-mode");
-}
 
 function myFunction() {
     var x = document.getElementById("myLinks");
