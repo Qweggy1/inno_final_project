@@ -65,3 +65,16 @@ def aboutmusic_redirect():
 @my_view.route('/qweggy')
 def aboutme_redirect():
     return redirect(url_for("my_view.aboutme"))
+
+@my_view.route('/djing')
+def aboutme_redirect():
+    return redirect(url_for("my_view.aboutdj"))
+
+
+@my_view.route('/fusergame')
+def aboutme_redirect():
+    return redirect(url_for("my_view.fuser"))
+
+@my_view.route('/production')
+def aboutme_redirect():
+    return redirect(url_for("my_view.aboutmusicproduction"))
